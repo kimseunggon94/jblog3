@@ -28,4 +28,8 @@ public class BlogService {
 		return postDao.getList(categoryno);
 	}
 
+	public PostVo getPost(Long postno, Long categoryno) {
+		return postDao.get(postno, categoryno);
+	}
+
 }
